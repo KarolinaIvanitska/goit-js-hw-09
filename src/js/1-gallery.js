@@ -75,8 +75,8 @@ function imageTemplate({ preview, original, description }) {
     <a class="gallery-link" href="${original}">
       <img
         class="gallery-image"
-        width = "360";
-        height = "200";
+        width = "360"
+        height = "200"
         src="${preview}"
         data-source="${original}"
         alt="${description}"
