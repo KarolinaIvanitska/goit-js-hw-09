@@ -55,7 +55,7 @@
 }
 
 .feedback-form input:hover {
-  border: 1px solid #000;
+  border-color: #000000;
 }
 
 .feedback-form textarea {

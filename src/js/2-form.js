@@ -36,16 +36,14 @@ form.addEventListener('submit', e => {
   const email = e.currentTarget.elements.email.value.trim();
   const message = e.currentTarget.elements.message.value.trim();
 
-  const userData = { email, message };
+  const data = { email, message };
 
   if (!email || !message) {
-    alert('Заповніть всі поля!');
+    alert('All form fields must be filled in');
+    return;
   }
-  return;
 
   console.log(data);
-
-  e.target.reset();
-
   localStorage.removeItem('feedback-form-state');
+  e.target.reset();
 });
