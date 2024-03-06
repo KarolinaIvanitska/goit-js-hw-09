@@ -38,6 +38,13 @@ form.addEventListener('submit', e => {
 
   const userData = { email, message };
 
+  if (!email || !message) {
+    alert('Заповніть всі поля!');
+  }
+  return;
+
+  console.log(data);
+
   e.target.reset();
 
   localStorage.removeItem('feedback-form-state');
